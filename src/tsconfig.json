@@ -20,5 +20,13 @@
   "angularCompilerOptions": {
     "genDir": "../aot",
     "skipMetadataEmit": false
-  }
+  },
+  "include": [
+    "src/",
+    "**/*"
+  ],
+  "exclude": [
+    "node_modules/"
+  ]
+  
 }
