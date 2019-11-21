@@ -23,10 +23,20 @@
   },
   "include": [
     "src/",
-    "../src/*.ts"
+    "../src/DataTableModule.ts",
+    "../src/DefaultSorter.ts",
+    "../src/Paginator.ts",
+    "../src/BootstrapPaginator.ts",
+    "../src/DataTableModule.ts",
+    "../src/DataTableModule",
+    "../src/DefaultSorter",
+    "../src/Paginator",
+    "../src/BootstrapPaginator",
+    "../src/DataTableModule"
   ],
   "exclude": [
     "node_modules/"
   ]
   
 }
+
