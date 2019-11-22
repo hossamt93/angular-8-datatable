@@ -1,28 +1,31 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
+    "importHelpers": true,
+    "module": "commonjs",
+    "outDir": "../lib",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es5",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "removeComments": true,
-    "sourceMap": true,
-    "outDir": "../lib",
-    "declaration": true,
     "typeRoots": [
       "../node_modules/@types"
     ],
     "lib": [
-      "dom",
-      "es2015"
+      "es6", "dom", "es2017"
     ]
   },
-  "angularCompilerOptions": {
-    "genDir": "../aot",
-    "skipMetadataEmit": false
-  },
+  "files": [
+    "../src/BootstrapPaginator.ts",
+    "../src/DataTable.spec.ts",
+    "../src/DataTable.ts",
+    "../src/DataTableModule.ts",
+    "../src/DefaultSorter.ts",
+    "../src/Paginator.ts",
+  ],
   "include": [
-    "src/",
     "../src/DataTableModule.ts",
     "../src/DefaultSorter.ts",
     "../src/Paginator.ts",
@@ -32,11 +35,7 @@
     "../src/DefaultSorter",
     "../src/Paginator",
     "../src/BootstrapPaginator",
-    "../src/DataTableModule"
-  ],
-  "exclude": [
-    "node_modules/"
+    "../src/DataTableModule",
+    "../src/*.ts"
   ]
-  
 }
-
